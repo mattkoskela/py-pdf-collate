@@ -29,6 +29,8 @@ class PDF():
         if not output_filename:
             random_filename = os.getcwd() + "/" + hashlib.md5().hexdigest() + ".pdf"
             output_filename = random_filename
+        else:
+            random_filename = None
 
         pdfTest = PdfFileReader(file(source_filename, "rb"))
         output = PdfFileWriter()

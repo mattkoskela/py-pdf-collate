@@ -18,6 +18,6 @@ setup(
     description="A python script that collates your PDF documents.",
     long_description=open("README.md").read(),
     install_requires=[
-        "PyPDF2==1.18"
+        "PyPDF2==1.27.5"
     ]
 )
